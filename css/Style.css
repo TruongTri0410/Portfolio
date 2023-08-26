@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+body{
+	font-family: 'Quicksand', sans-serif;font-size: 16px;color: #666666;margin: 0
+}
+header{
+	width: 100%;height: 60px; background-color: rgba(188,188,188,1.00);box-shadow: 5px 5px 5px lightgray;z-index: 100;position: fixed
+}
+.logo{
+	padding-top: 11px
+}
+.menu{
+	padding:20px
+}
+
+.menu ul{
+	padding : 0; margin: 0;list-style: none;display: flex
+}
+.menu ul li a{
+	padding: 8px 25px;border-radius: 20px
+}
+.menu ul li a:hover{
+	background-color: rgba(240,182,183,1.00);color: white
+}
+#home{
+	width: 100%;min-height: 1000px;padding-top: 100px;background: url("../img/profile.png"),url("../img/bg-header.png");background-repeat: no-repeat;background-position:bottom right, left top
+}
+#about{
+	width: 100%;min-height: 1000px;padding-top: 100px;
+}
+#skill{
+	width: 100%;min-height: 1000px;padding-top: 100px
+}
+/* Style the tab */
+#skill .tab {
+  overflow: hidden;
+  border: 1px solid # ;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+#skill .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+#skill  .tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+#skill  .tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+#skill  .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+#projects{
+	width: 100%;min-height: 1000px;padding-top: 100px;background-color: #424242 		
+}
+/* Style the tab */
+#projects .tab {
+
+}
+
+/* Style the buttons inside the tab */
+#projects .tab button {
+border-bottom: 2px solid white; background: none;
+	border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 3px;
+  transition: 0.3s;
+  font-size: 17px;
+margin-left: 25px
+}
+
+/* Change background color of buttons on hover */
+#projects .tab button:hover {
+  color: #BAFF00; border-bottom: 2px solid #BAFF00
+}
+
+/* Create an active/current tablink class */
+#projects .tab button.active {
+  color: ; border-bottom: 2px solid #9232F0}
+
+/* Style the tab content */
+#projects .tabcontent2 {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.box {
+	display: flex; justify-content: space-between; align-items: center
+}
+#testimonial{
+	width: 100%;min-height: 1000px;padding-top: 100px;background-color: #eee
+}
+#testimonial .client{
+text-align: center;display: flex;flex-direction: column;justify-content: center; align-items: center;padding: 10px 50px
+}
+#testimonial .client img{
+	width: 100px;height: 100px;border-radius: 50px
+}
+#testimonial .client .vien{
+	width: 100px;height: 100px;border-radius: 50%;border: 1px solid rgba(0,255,212,1.00);padding:7px
+}
+#testimonial .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#testimonial .owl-nav [class*='owl-'] {
+	font-size:60px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #00E3FF
+}
+
+#testimonial .owl-nav .owl-next{ position:absolute; right:5%;}
+#testimonial .owl-nav .owl-prev{ position:absolute; left:5%;}
+#testimonial .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:yellow;
+      text-decoration: none; }
+
+#contact{
+	width: 100%;min-height: 1000px;padding-top: 100px
+}
+#contact .vien-chan{
+	padding-bottom: 15px;font-size: 25px; color: black;border-bottom: 1px solid #414141
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+.menu ul li .menu-item.active {
+	background-color: blue;color: white
+}
+.so{
+	font-size: 120px;color: black;font-weight: bold
+}
+.year{
+	padding-left: 10px; letter-spacing: 20px
+}
+.text-den{
+	color: black;font-weight: bolder
+}
+.bo-goc {
+	border-radius: 20px
+}
+.text-do{
+	color : red;font-weight: bolder
+}
+.progress{
+width: 100%;height: 8px;background-color: #BBBBBB;border-radius: 10px;margin-bottom: 15px;overflow: hidden
+}
+.bar{
+	height: 8px;border-radius: 10px
+}
+#services{
+	width: 100%;min-height: 1000px;padding-top: 100px 
+}
+.service {
+	width: 100%; height: 150px; display: flex
+}
+.service-icon i{
+	font-size: 40px;color: red;padding: 15px;transition: all 0.6s
+}
+.service-text{
+	width: 100%;height: 150px;padding: 15px;transition: all 0.6s
+}
+.service:hover .service-icon i {
+	font-size:60px
+}
+.service:hover .service-text {
+	background-color: red;color: white
+}
+.service-icon {
+	width: 180px;height: 150px;border: 1px solid red;display: flex;justify-content: center;align-items: center}
+.service-icon img {
+	width: 50px;transition: all 0.6s
+}
+.service:hover .service-icon img {
+	width: 60px
+}
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-8-17 14:5:37
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
